@@ -89,15 +89,204 @@
       var pos = txt.
       indexOf("h");*/
 
+      var txt = "I can eat bananas all day";
+      var x = txt.slice(10, 17);
       
+      var txt = "Hello World";
+      txt = txt.replace("Hello", "Welcome");
+
+      var txt = "Hello World";
+      txt = txt.toUpperCase();
+
+      var txt = "Hello World";
+      txt = txt.toLowerCase();
+
+      var str1 = "Hello ";
+      var str2 = "World!";
+      var result = 
+      str1.concat(str2);
+
+      var cars = ["Saab", "Volvo", "BMW"];
+      var x = cars[1];
+
+      var cars = ["Volvo", "Jeep", "Mercedes"];
+      cars[0] = "Ford";
+
+      var cars = ["Volvo", "Jeep", "Mercedes"];
+      alert(cars.length);
+
+      var fruits = ["Banana", "Orange", "Apple"];
+      fruits.pop();
+
+      var fruits = ["Banana", "Orange", "Apple"];
+      fruits.push("Kiwi");
+
+      var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+      fruits.splice(1, 2);
+
+      var girls = ["Cecilie", "Lone"];
+      var boys = ["Emil", "Tobias", "Linus"];
+      var children = girls.concat(boys);
+
+      var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+      fruits.sort();
+      
+      var d = new Date();
+      alert(d);
+
+      var d = new Date();
+      year = d.getFullYear();
+
+      var d = new Date();
+      month = d.getMonth();
+      
+      var d = new Date();
+      d.setFullYear(2020);
+
+      var r = Math.random();
+      
+      var x = Math.max(10, 20);
+      
+      var x = Math.round(5.3);
+
+      var x = Math.sqrt(9);
+
+      x = 10;
+      y = 5;
+      alert(x > y);
+
+      x = 10;
+      y = 10;
+      alert(x == y);
+      
+      x = 10;
+      y = 5;
+      alert(x != y);
+
+      var age = n;
+      var voteable = (age < 18) ? "Too young" : "Old enough";
+      alert(voteable);
+
+      if (x > y) {
+        alert("Hello World");}
+
+      if(x > y) {
+        alert("Hello World");} 
+       else{
+        alert("Goodbye");}
+
+        switch(fruits) {
+         case "Banana":
+		    alert("Hello")
+		    break;
+		 case "Apple":
+		    alert("Welcome")
+		    break;
+		 default:
+            alert("Neither");}
+
+
+		switch
+		(fruits) {
+		  
+		case
+		 "Banana":
+		    alert("Hello")
+		    break;
+		  
+		case
+		 "Apple":
+		    alert("Welcome")
+		    break;    
+		}
+
+		var i;
+        for (i = 0; i < 10; i++) {
+           console.log(i);
+        }
+
+        var fruits = ["Apple", "Banana", "Orange"];
+        for (x in fruits) {
+           console.log(x);
+        }
+
+        var i = 0;
+        while (i < 10) {
+           console.log(i);
+           i++
+        }
+
+        var i = 0;
+        while (i < 10) {
+        console.log(i);
+        i = i + 2;
+        }
+        
+        for (i = 0; i < 10; i++) {
+        console.log(i);
+         if (i == 5) {
+          break;
+           }}
+
+        for (i = 0; i < 10; i++) {
+         if (i == 5) { continue; }
+           console.log(i);}
+
+
+
    </script> 
    <button onclick="alert('Hello')">Click me.</button>
    <button onclick="myFunction()">Click me.</button>
    <button onclick="myFunction()">Click me.</button>
    <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
 
+   <p id="demo"></p>
+		<script>
+		document.getElementById("demo").innerHTML = "Hello";
+		</script>
+
+		<p id="demo"></p>
+		<script>
+		document.getElementsByTagName("p")[0].innerHTML = "Hello";
+		</script>
 
 
-   
+		<p class="test"></p>
+		<p class="test"></p>
+		<script>
+		document.getElementsByClassName("test")[0].innerHTML = "Hello";
+		</script>
+
+
+		<img id="image" src="smiley.gif">
+		<script>
+		document.getElementById("image").src = "pic_mountain.jpg";
+		</script>
+
+		<input type="text" id="myText" value="Hello">
+		<script>
+		document.getElementById("myText").value = "Hello";
+		</script>
+
+		<input type="text" id="myText" value="Hello">
+		<script>
+		document.getElementById("myText").value = "Hello";
+		</script>
+
+		<p id="demo"></p>
+		<script>
+		document.getElementById("demo").style.fontSize = "40px";
+		</script>
+
+		<p id="demo"></p>
+		<script>
+		document.getElementById("demo").style.display = "none";
+		</script>   
+
+		<button id="demo">Click me1</button>
+		<script>
+		document.getElementById("demo").addEventListener("click", myFunction);
+		</script>
+
 </body>
 </html>
